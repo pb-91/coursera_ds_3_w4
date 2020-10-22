@@ -1,0 +1,19 @@
+used libraries: dplyr, data.table
+
+header_df: contains the column names of the test and train dataset
+train_df: train dataset
+test_df: test dataset
+df_merged: merged train and test dataset
+train_labels: activity labels of train dataset
+test_labels: activity labels of test dataset
+labels: merged train and test activity labels
+activity_labels: enumeration about labels - activity
+replaceLabel(): function which replace the label numbers to activity names
+df_w_lab: df_merged with labels
+col_indices: column indices, which stores mean and std measurements
+df: the dataframe, which stores only mean and std measurements columns
+subject_train: subjects of train dataset
+subject_test: subjects of test dataset
+subject: merged test and train subjects
+df_w_sub: df with subjects
+df_mean_by_subject: average of each variable for each activity and each subject from df extended by subjects
