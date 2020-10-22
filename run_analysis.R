@@ -45,6 +45,6 @@ names(subject) <- "subject"
 df_w_sub <- cbind(df, subject)
 
 # calculate the average of each variable for each activity and each subject.
-df_mean_by_subject <- df_by_subject %>%
+df_mean_by_subject <- df_w_sub %>%
   group_by(subject, activity) %>%
   summarise(across(everything(), mean))
